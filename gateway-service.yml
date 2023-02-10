@@ -116,8 +116,8 @@ spring:
         - id: webui
           uri: ${targets.webui}
           predicates:
-            - Path=${geoserver.base-path}/**
-          #- Path=${geoserver.base-path},${geoserver.base-path}/,${geoserver.base-path}/index.html,${geoserver.base-path}/web,${geoserver.base-path}/web/**,${geoserver.base-path}/j_spring_security_check,${geoserver.base-path}/j_spring_security_logout
+            # - Path=${geoserver.base-path}/**
+            - Path=${geoserver.base-path},${geoserver.base-path}/,${geoserver.base-path}/index.html,${geoserver.base-path}/web,${geoserver.base-path}/web/**,${geoserver.base-path}/j_spring_security_check,${geoserver.base-path}/j_spring_security_logout
 
 management:
   endpoints:
